@@ -5,11 +5,7 @@
 
 <script setup lang="ts">
 
-    // This starter template is using Vue 3 <script setup> SFCs
-    // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-
     import VueTwBlock from '@/components/VueTwBlock.vue'
-    //import { VueTwBlock } from 'vue-tw-block'
 
 </script>
 
@@ -20,7 +16,52 @@
     
     <div class="bg-white text-center border-t-2 border-b-2 border-green-500 border-dashed py-24">
 
-        <VueTwBlock/>
+        <div class="flex flex-col space-y-2">
+
+            <VueTwBlock tag="div" text="VueTwBlock's with a default palette"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-color="primary"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-color="secondary"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-color="error"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-color="success"/>
+
+
+            <VueTwBlock tag="div" text="VueTwBlock's with a console palette"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-palette="console" bg-color="primary"/>
+
+            <VueTwBlock tag="div" text="(div) secondary" bg-palette="console" bg-color="secondary"/>
+
+            <VueTwBlock tag="div" text="(div) error" bg-palette="console" bg-color="error"/>
+
+            <VueTwBlock tag="div" text="(div) success" bg-palette="console" bg-color="success"/>
+            
+
+            <VueTwBlock tag="div" text="VueTwBlock's with a monochromatic palette"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-palette="monochromatic" bg-color="primary"/>
+
+            <VueTwBlock tag="div" text="(div) secondary" bg-palette="monochromatic" bg-color="secondary"/>
+
+            <VueTwBlock tag="div" text="(div) error" bg-palette="monochromatic" bg-color="error"/>
+
+            <VueTwBlock tag="div" text="(div) success" bg-palette="monochromatic" bg-color="success"/>
+            
+
+            <VueTwBlock tag="div" text="VueTwBlock's with a pastel palette"/>
+
+            <VueTwBlock tag="div" text="(div) primary" bg-palette="pastel" bg-color="primary"/>
+
+            <VueTwBlock tag="div" text="(div) secondary" bg-palette="pastel" bg-color="secondary"/>
+
+            <VueTwBlock tag="div" text="(div) error" bg-palette="pastel" bg-color="error"/>
+
+            <VueTwBlock tag="div" text="(div) success" bg-palette="pastel" bg-color="success"/>
+
+        </div>
 
     </div>
 
