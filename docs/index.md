@@ -11,9 +11,9 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 :::
 
 
-# ViteVueTsCompoPkgStarter.vue
+# VueTwBlock.vue
 
-Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `VueTwBlock.vue` component for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -21,7 +21,7 @@ Welcome to the docs page for OBE:WDS's `ViteVueTsCompoPkgStarter.vue` component 
 ## Installation
 
 ```bash
-npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
+npm install @obewds/vue-tw-block --save-dev
 ```
 
 
@@ -36,7 +36,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{3}
 <template>
-    <ViteVueTsCompoPkgStarter/>
+    <VueTwBlock/>
 </template>
 ```
 
@@ -47,7 +47,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{3}
 <script setup>
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { VueTwBlock } from '@obewds/vue-tw-block'
 </script>
 ```
 
@@ -59,10 +59,10 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 ```html{4,9}
 <script>
     import { defineComponent } from 'vue'
-    import { ViteVueTsCompoPkgStarter } from '@obewds/vite-vue-ts-compo-pkg-starter'
+    import { VueTwBlock } from '@obewds/vue-tw-block'
 
     export default defineComponent({
-        components: { ViteVueTsCompoPkgStarter }
+        components: { VueTwBlock }
     })
 </script>
 ```
@@ -84,7 +84,7 @@ npm install @obewds/vite-vue-ts-compo-pkg-starter --save-dev
 
 ```html{2}
 <template>
-    <ViteVueTsCompoPkgStarter text="My text prop string"/>
+    <VueTwBlock text="My text prop string"/>
 </template>
 ```
 
@@ -110,9 +110,9 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ```html{2-4}
 <template>
-    <ViteVueTsCompoPkgStarter>
+    <VueTwBlock>
         My slot content
-    </ViteVueTsCompoPkgStarter>
+    </VueTwBlock>
 </template>
 ```
 
@@ -132,7 +132,7 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 ## Uninstall
 
 ```bash
-npm uninstall @obewds/vite-vue-ts-compo-pkg-starter
+npm uninstall @obewds/vue-tw-block
 ```
 
 

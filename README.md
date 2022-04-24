@@ -1,4 +1,4 @@
-# vite-vue-ts-compo-pkg-starter
+# vue-tw-block
 
 The official OBE:WDS Vite/Vue TypeScript component package development kit with Tailwind CSS, VitePress and Vitest integrations
 
@@ -9,7 +9,7 @@ The official OBE:WDS Vite/Vue TypeScript component package development kit with 
 ---
 ## Documentation
 
-Check out the [official docs](https://obewds.github.io/vite-vue-ts-compo-pkg-starter/) for this component for more details!
+Check out the [official docs](https://obewds.github.io/vue-tw-block/) for this component for more details!
 
 <br>
 

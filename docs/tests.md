@@ -13,7 +13,7 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 
 
 
-# ViteVueTsCompoPkgStarter.vue Tests
+# VueTwBlock.vue Tests
 
 
 
@@ -28,4 +28,4 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 
 ## Vitest Tests
 
-<<< @/../tests/ViteVueTsCompoPkgStarter.test.js
+<<< @/../tests/VueTwBlock.test.js

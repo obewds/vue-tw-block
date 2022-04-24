@@ -8,8 +8,8 @@
     // This starter template is using Vue 3 <script setup> SFCs
     // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 
-    import ViteVueTsCompoPkgStarter from '@/components/ViteVueTsCompoPkgStarter.vue'
-    //import { ViteVueTsCompoPkgStarter } from 'vite-vue-ts-compo-pkg-starter'
+    import VueTwBlock from '@/components/VueTwBlock.vue'
+    //import { VueTwBlock } from 'vue-tw-block'
 
 </script>
 
@@ -20,7 +20,7 @@
     
     <div class="bg-white text-center border-t-2 border-b-2 border-green-500 border-dashed py-24">
 
-        <ViteVueTsCompoPkgStarter/>
+        <VueTwBlock/>
 
     </div>
 
