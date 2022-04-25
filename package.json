@@ -86,6 +86,6 @@
     "Tailwind CSS"
   ],
   "dependencies": {
-    "@obewds/vue-tw-el": "^0.1.0"
+    "@obewds/vue-tw-el": "^1.0.1"
   }
 }
