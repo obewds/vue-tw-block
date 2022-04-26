@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "./dist/vue-tw-block.umd.js",
   "module": "./dist/vue-tw-block.es.js",
-  "browser": "dist/vue-tw-block.iife.js",
+  "browser": "./dist/vue-tw-block.iife.js",
   "exports": {
     ".": {
       "import": "./dist/vue-tw-block.es.js",
@@ -86,6 +86,6 @@
     "Tailwind CSS"
   ],
   "dependencies": {
-    "@obewds/vue-tw-el": "^1.0.1"
+    "@obewds/vue-tw-el": "^1.0.2"
   }
 }
