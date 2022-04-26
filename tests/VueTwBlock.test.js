@@ -1,7 +1,7 @@
 // ./tests/VueTwBlock.test.js
 
 import { mount } from '@vue/test-utils'
-import VueTwBlock from '../src/VueTwBlock.vue'
+import VueTwBlock from '../src/components/VueTwBlock.vue'
 
 
 
@@ -19,7 +19,8 @@ test('VueTwBlock.vue component text prop accepts a string value', async () => {
 
     const wrapper = mount(VueTwBlock, {
         props: {
-            text: testString
+            tag: 'div',
+            text: testString,
         },
     })
 
@@ -34,11 +35,24 @@ test('VueTwBlock.vue component default slot accepts an element node with a child
     const testStrLiteral = `<div>Test String Value</div>`
 
     const wrapper = mount(VueTwBlock, {
+        props: {
+            tag: 'div',
+        },
         slots: {
             default: testStrLiteral
         },
     })
 
     expect(wrapper.html()).toContain(testStrLiteral)
+    
+})
+
+
+
+test('VueTwBlock.vue component does not allow a non-block element tag prop value', async () => {
+
+    const validator = VueTwBlock.props.tag.validator
+
+    expect(validator('span')).toBe(false)
     
 })
