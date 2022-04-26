@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-tw-block",
-  "description": "The official OBE:WDS Vite/Vue TypeScript component package development kit with Tailwind CSS, VitePress and Vitest integrations",
-  "version": "0.1.0",
+  "description": "The OBE:WDS VueTwBlock component for Vue.js 3 and Tailwind CSS 3 ",
+  "version": "0.1.1",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vue-tw-block#readme",
   "license": "MIT",
