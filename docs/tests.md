@@ -8,7 +8,7 @@ head:
 
 
 
-# VueTwBlock.vue Tests
+# @obewds/vue-tw-block Tests
 
 
 

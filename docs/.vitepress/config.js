@@ -2,7 +2,7 @@
 
 module.exports = {
     base: '/vue-tw-block/',
-    title: 'VueTwBlock.vue',
+    title: '@obewds/vue-tw-block',
     description: 'A documentation site for the VueTwBlock component',
     markdown: {
       lineNumbers: true,
