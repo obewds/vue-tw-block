@@ -6,7 +6,7 @@ head:
 ---
 
 
-# VueTwBlock.vue
+# @obewds/vue-tw-block
 
 Welcome to the docs page for OBE:WDS's `VueTwBlock.vue` component for [Vue.js](https://vuejs.org/)!
 

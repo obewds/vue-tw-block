@@ -8,7 +8,7 @@ head:
 
 
 
-# VueTwBlock.vue Component
+# @obewds/vue-tw-block Component
 
 
 
