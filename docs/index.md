@@ -24,48 +24,31 @@ npm install @obewds/vue-tw-block --save-dev
 
 ## Tailwind CSS Integration
 
-In your project's `./tailwind.config.js` file:
+This component is dependent on Tailwind CSS and the [@obewds/obewds-tw-config](https://obewds.github.io/obewds-tw-config) package that drives a lot of the features of this component. So you'll want to be sure you have the most recent version of the [@obewds/obewds-tw-config](https://obewds.github.io/obewds-tw-config) package when getting started and first bringing this compoent into a project.
 
-```javascript
-module.exports = {
 
-    // ...
+::: warning IS IT INSTALLED???
+The [@obewds/obewds-tw-config](https://obewds.github.io/obewds-tw-config) package is installed if you have an `obewds.tw.config.json` file in your root directory! However, you can also safely run the [@obewds/obewds-tw-config](https://obewds.github.io/obewds-tw-config) package's [update command](https://obewds.github.io/obewds-tw-config/#updating-config-versions), which will install a fresh default file if one is not found in your project root!
 
-    content: [
-        // ...
-        "./node_modules/@obewds/**/dist/*.js", // add this line to include all OBE:WDS stock defaults
-        "./obewds.tw.config.json", // add this line to include your own OBE:WDS tailwind config file defaults
-    ],
+So if it's installed, you'll want to [Update Your Config File](https://obewds.github.io/obewds-tw-config/#updating-config-versions).
 
-    // ...
+If it's not installed, then you'll want to [Install the Config File](https://obewds.github.io/obewds-tw-config/#config-file-installation).
+:::
 
-}
-```
+Don't forget, you'll also want to ensure you've:
 
-And when using your own OBE:WDS Tailwind CSS config file, you'll need to `provide()` the data to your application, using something along the lines of this pseudo code:
+* Handled your [Tailwind Config Setup](https://obewds.github.io/obewds-tw-config/#tailwind-config-setup) for the `@obewds/obewds-tw-config` package
+* Ensured you've included your new `obewds.tw.config.json` file into your current app's global context
 
-```javascript
-import { createApp } from 'vue'
-import App from './App.vue'
-
-// Ensure the app's main tailwind file is imported
-import './assets/index.css'
-
-// Include your OBE:WDS Tailwind CSS config file
-import obewdsTwConfig from '../obewds.tw.config.json'
-
-const app = createApp(App)
-
-// Provide the data with the SPECIFIC key of 'tw'!
-app.provide('tw', obewdsTwConfig)
-
-app.mount('#app')
-```
+::: info IN-APP CONTEXTS
+Dealing with the `obewds.tw.config.json` file is detailed in the [App Config Setup](https://obewds.github.io/obewds-tw-config/#app-config-setup) section of the `@obewds/obewds-tw-config` package docs.
+:::
 
 
 
 
-## Import Component
+
+## Importing
 
 
 
@@ -109,9 +92,6 @@ app.mount('#app')
 
 
 ## Props
-
-
-
 
 ### bgPalette
 
@@ -241,9 +221,6 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ## Slots
 
-
-
-
 ### default
 
 ```html{2-4}
@@ -266,53 +243,21 @@ If both the `text` prop and `slot` content are used, then the `text` prop takes 
 
 ## Text Prop vs Slot Precidence
 
-```html
-<template>
-
-    <!--
-    The text="" attr/prop value takes precidence 
-    over slot content!
-    -->
-    <VueTwBlock tag="div" text="This text prop value will override">
-        This slot content.
-    </VueTwBlock>
-
-</template>
-```
-
-Outputs:
-
-```html
-<div>This text prop value will override</div>
-```
+Detailed in the [@obewds/vue-el](https://obewds.github.io/vue-el/#text-prop-vs-slot-precidence) docs.
 
 <br>
+
+
+
+
+
 
 ## Empty State Default Placeholder String
 
-```html
-<template>
-
-    <!-- 
-    Empty slot and text prop/attr values 
-    will render the default component 
-    slot placeholder string "VueEl"!
-    -->
-    <VueTwBlock tag="div" text="">
-        <!-- This comment won't render -->
-    </VueTwBlock>
-
-</template>
-```
-
-Outputs:
-
-```html
-<!-- The placeholder will still render, though -->
-<div>VueEl</div>
-```
+Detailed in the [@obewds/vue-el](https://obewds.github.io/vue-el/#empty-state-default-placeholder-string) docs.
 
 <br>
+
 
 
 
