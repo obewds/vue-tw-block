@@ -19,7 +19,7 @@
         <div class="flex flex-col space-y-2">
 
 
-            <VueTwBlock tag="div" text="VueTwEl's with a default text palette"/>
+            <VueTwBlock tag="div" text="VueTwBlock's with a default text palette"/>
 
             <VueTwBlock tag="div" text="(div) default" text-color="default"/>
 
@@ -32,7 +32,7 @@
             <VueTwBlock tag="div" text="(div) success" text-color="success"/>
 
 
-            <VueTwBlock tag="div" text="VueTwEl's with a default border palette"/>
+            <VueTwBlock tag="div" text="VueTwBlock's with a default border palette"/>
 
             <VueTwBlock tag="div" text="(div) default" border-color="default" class="border"/>
 
