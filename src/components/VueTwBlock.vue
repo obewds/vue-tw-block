@@ -4,6 +4,7 @@
 <script setup lang="ts">
 
 	import { VueTwEl } from '@obewds/vue-tw-el'
+    import { blockLevelElementTags } from '@obewds/vue-validators'
 
     const props = defineProps({
         bgPalette: {
@@ -20,41 +21,12 @@
         },
         borderColor: {
             type: String,
-            default: 'default',
+            default: '',
         },
         tag: {
             type: String,
             required: true,
-            validator: (prop: string): boolean => ([
-                'address',
-                'article',
-                'aside',
-                'blockquote',
-                'details',
-                'dialog',
-                'dd',
-                'div',
-                'dl',
-                'dt',
-                'fieldset',
-                'figcaption',
-                'figure',
-                'footer',
-                'form',
-                'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-                'header',
-                'hgroup',
-                /*'hr',*/
-                'li',
-                'main',
-                'nav',
-                'ol',
-                'p',
-                'pre',
-                'section',
-                'table',
-                'ul'
-            ]).includes(prop),
+            validator: (prop: string): boolean => (blockLevelElementTags).includes(prop),
         },
         text: {
             type: String,
