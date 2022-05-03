@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-tw-block",
   "description": "The OBE:WDS VueTwBlock component for Vue.js 3 and Tailwind CSS 3 ",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vue-tw-block#readme",
   "license": "MIT",
