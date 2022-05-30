@@ -2,6 +2,7 @@ import { defineComponent, openBlock, createBlock, unref, withCtx, renderSlot } f
 import { VueTwEl } from "@obewds/vue-tw-el";
 import { blockLevelElementTags } from "@obewds/vue-validators";
 const _sfc_main = /* @__PURE__ */ defineComponent({
+  name: "VueTwBlock",
   props: {
     bgPalette: {
       type: String,
