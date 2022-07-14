@@ -1,8 +1,8 @@
-import { defineComponent, openBlock, createBlock, unref, withCtx, renderSlot } from "vue";
-import { VueTwEl } from "@obewds/vue-tw-el";
-import { blockLevelElementTags } from "@obewds/vue-validators";
-const _sfc_main = /* @__PURE__ */ defineComponent({
-  name: "VueTwBlock",
+import { defineComponent as l, openBlock as r, createBlock as o, unref as a, withCtx as d, renderSlot as u } from "vue";
+import { VueTwEl as g } from "@obewds/vue-tw-el";
+import { blockLevelElementTags as n } from "@obewds/vue-validators";
+const C = /* @__PURE__ */ l({
+  __name: "VueTwBlock",
   props: {
     bgPalette: {
       type: String,
@@ -22,8 +22,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     },
     tag: {
       type: String,
-      required: true,
-      validator: (prop) => blockLevelElementTags.includes(prop)
+      required: !0,
+      validator: (t) => n.includes(t)
     },
     text: {
       type: String,
@@ -38,24 +38,24 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       default: "default"
     }
   },
-  setup(__props) {
-    return (_ctx, _cache) => {
-      return openBlock(), createBlock(unref(VueTwEl), {
-        bgPalette: __props.bgPalette,
-        bgColor: __props.bgColor,
-        borderPalette: __props.borderPalette,
-        borderColor: __props.borderColor,
-        tag: __props.tag,
-        text: __props.text,
-        textPalette: __props.textPalette,
-        textColor: __props.textColor
-      }, {
-        default: withCtx(() => [
-          renderSlot(_ctx.$slots, "default")
-        ]),
-        _: 3
-      }, 8, ["bgPalette", "bgColor", "borderPalette", "borderColor", "tag", "text", "textPalette", "textColor"]);
-    };
+  setup(t) {
+    return (e, f) => (r(), o(a(g), {
+      bgPalette: t.bgPalette,
+      bgColor: t.bgColor,
+      borderPalette: t.borderPalette,
+      borderColor: t.borderColor,
+      tag: t.tag,
+      text: t.text,
+      textPalette: t.textPalette,
+      textColor: t.textColor
+    }, {
+      default: d(() => [
+        u(e.$slots, "default")
+      ]),
+      _: 3
+    }, 8, ["bgPalette", "bgColor", "borderPalette", "borderColor", "tag", "text", "textPalette", "textColor"]));
   }
 });
-export { _sfc_main as VueTwBlock };
+export {
+  C as VueTwBlock
+};
