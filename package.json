@@ -43,7 +43,7 @@
   "dependencies": {
     "@obewds/obewds-tw-config": "^1.1.1",
     "@obewds/vue-component-helpers": "^1.1.1",
-    "@obewds/vue-tw-el": "^2.2.1",
+    "@obewds/vue-tw-el": "^2.2.2",
     "@obewds/vue-validators": "^1.2.3"
   },
   "devDependencies": {
